@@ -47,6 +47,10 @@ public class MyLinkedList<T> {
         return true;
     }
 
+    public int getSize(){
+        return listCount;
+    }
+
     @Override
     public String toString(){
         StringBuilder result = new StringBuilder();

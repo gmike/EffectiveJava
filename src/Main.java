@@ -18,21 +18,8 @@ public class Main {
                     .build();
             System.out.println(nf.toString());
 
-        /* Linked List */
-        MyLinkedList<String> myList = new MyLinkedList<String>();
-        myList.add(new Node<String>("first"));
-        myList.add(new Node<String>("second"));
-        myList.add(new Node<String>("third"));
-        myList.remove(2);
-        System.out.print(myList);
-
         /* Adapter */
         MediaPlayer player = new MediaPlayerAdapter(new AdvancedMediaPlayerImp());
         player.play("mp3");
-
-        /* equals and hashcode */
-        CaseInsensitiveString cis1 = new CaseInsensitiveString("Michas");
-        CaseInsensitiveString cis2 = new CaseInsensitiveString("Gurgul");
-        CaseInsensitiveString cis1copy = new CaseInsensitiveString("Michas");
     }
 }

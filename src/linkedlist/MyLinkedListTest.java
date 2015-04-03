@@ -37,8 +37,8 @@ public class MyLinkedListTest {
         assertEquals(myLinkedList.getSize(),size-1);
     }
 
-    @Test(expected = false)
+    @Test
     public void testRemoveFail(){
-        myLinkedList.remove(100);
+        assertFalse(myLinkedList.remove(100));
     }
 }

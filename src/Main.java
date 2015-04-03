@@ -21,5 +21,7 @@ public class Main {
         /* Adapter */
         MediaPlayer player = new MediaPlayerAdapter(new AdvancedMediaPlayerImp());
         player.play("mp3");
+
+        /* end of main */
     }
 }

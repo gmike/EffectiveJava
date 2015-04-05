@@ -6,6 +6,11 @@ import linkedlist.MyLinkedList;
 import linkedlist.Node;
 import objectmethods.CaseInsensitiveString;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,6 +27,6 @@ public class Main {
         MediaPlayer player = new MediaPlayerAdapter(new AdvancedMediaPlayerImp());
         player.play("mp3");
 
-        /* end of main */
+
     }
 }

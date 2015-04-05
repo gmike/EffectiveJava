@@ -2,8 +2,7 @@ package objectmethods;
 
 import org.junit.*;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -48,5 +47,13 @@ public class CaseInsensitiveStringTest {
         CaseInsensitiveString[] array = new CaseInsensitiveString[]{new CaseInsensitiveString("michal"), new CaseInsensitiveString("abc"), new CaseInsensitiveString("bcgf")};
         Arrays.sort(array);
         assertEquals(array[2], new CaseInsensitiveString("michal"));
+    }
+
+    @Test
+    public void hashSetTest(){
+        Set<CaseInsensitiveString> set = new HashSet<CaseInsensitiveString>();
+        set.add(new CaseInsensitiveString("put"));
+        boolean put = set.add(new CaseInsensitiveString("put"));
+        assertFalse(put);
     }
 }

@@ -26,6 +26,10 @@ public class NutritionFacts {
                 "fat: " + fat + "\n";
     }
 
+    public void doSomething(){
+        System.out.print("Outer class, do something \n");
+    }
+
     public static class Builder{
         private final int servings;
         private final int servingsSize;
@@ -59,6 +63,7 @@ public class NutritionFacts {
     }
 
     public class InnerClass {
+
 
     }
 
